@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+  <header>
+    <h1>Real Estate Management</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  
+  <section>
+    <h2>Register</h2>
+    <div class="register">
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+          <input type="radio" id="agent" name="role" value="agent" required>
+          <label for="agent">Agent</label>
+          <input type="radio" id="renter" name="role" value="renter" required>
+          <label for="renter">Renter</label>
+        </div>
+
+        <div id="agent-form" class="hidden">
+          <label for="agency">Agency</label>
+          <input type="text" id="agency" name="agency">
+        
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job-title">
+        
+          <label for="contact-info">Contact Information</label>
+          <input type="text" id="contact-info" name="contact-info">
+        </div>
+        
+        <div id="renter-form" class="hidden">
+          <label for="budget">Budget</label>
+          <input type="number" id="budget" name="budget">
+          <label for="preferred_location">preferred_location</label>
+          <input type="text" id="preferred_location" name="preferred_location">
+          <label for="move_in_date">move_in_date</label>
+          <input type="date" id="move_in_date" name="move_in_date">
+        </div>
+
+        <div>
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  
+  <footer>
+    <p>&copy; Real Estate Management 2023</p>
+  </footer>
+
+  
+  
+  <script src="script.js"></script>
+ 
+
+</body>
+</html>
